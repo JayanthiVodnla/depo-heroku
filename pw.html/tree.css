@@ -1,0 +1,101 @@
+.tree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.node{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 40px;
+    
+    
+    
+    
+    
+}
+.down{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 45px;
+    font-weight: bold;
+    width:20px;
+    font-size:20px
+
+}
+.node2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.nodechildren{
+    display: flex;
+    margin-right: 10px;
+    
+}
+.nodes{
+    font-size: 20px;
+    font-weight: bold;
+    width: 20px;
+    align-items: center;
+
+
+}
+
+.left-child,
+.right-child{
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 70px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.child{
+    display: flex;
+    margin-right: 10px;
+    
+}
+.node7{
+    margin-left: 90px;
+}
+.node3{
+    margin-left: 100px;
+}
+.child1{
+    margin-top: 50px;
+
+}
+.node9{
+
+    align-items: center;
+    margin-right: 180px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.child2{
+    
+    margin-top: 50px;
+}
+.node10{
+
+    align-items: center;
+    margin-right: 180px;
+    font-weight:bold;
+    font-size: 20px;
+    
+}
+.node span::before{
+    background: linear-gradient( bottom  ,black 49%, black 51%);
+
+}
+i{
+    text-align: center;
+    align-items: center;
+    margin-left: 15px;
+}

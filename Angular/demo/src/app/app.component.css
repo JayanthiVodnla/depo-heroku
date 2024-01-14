@@ -1,0 +1,74 @@
+
+form{
+    text-align: center;
+    align-items: center;
+    background-color:rgb(224, 171, 39);
+    width: 700px;
+    height: 500px;
+    margin-left: 400px;
+}
+.log{
+    margin-right: 60px;
+    border-radius: 16px;
+    width:100px;
+    margin-top: 25px;
+
+}
+.sign{
+    border-radius: 16px;
+    width: 100px;
+}
+.email{
+    border-radius: 16px;
+    width: 200px;
+    height: 50px;
+
+}
+.name{
+    border-radius: 16px;
+    margin-bottom: 30px;
+
+}
+.sign{
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+.login{
+    margin-bottom: 20px;
+    padding: 30px;
+
+
+}
+.pass{
+    border-radius: 16px;
+}
+.Email{
+    margin-left: 250px;
+    margin-bottom: 250px;
+}
+.password{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 40px;
+}
+.enter{
+    border-radius: 16px;
+    margin-bottom:15px ;
+}
+.mail{
+    border-radius: 16px;
+    margin-bottom: 15px;
+}
+.word{
+    border-radius: 16px;
+    margin-bottom: 15px;
+}
+.confirm{
+    border-radius: 16px;
+    margin-bottom: 15px;
+}
+.forgot{
+    text-decoration: none;
+    color: black;
+}
+

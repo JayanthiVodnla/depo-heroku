@@ -1,0 +1,18 @@
+p{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 35px;
+    
+}
+img{
+    position:absolute;
+    height: 100px;
+    width:100px;
+    align-items: center;
+    margin-bottom: 700vh;
+    margin-left: 700px;
+
+}

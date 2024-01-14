@@ -1,0 +1,119 @@
+<html>
+    <head>
+    <script type="text/javascript" src="https://unpkg.com/vis-network@latest/standalone/umd/vis-network.min.js"></script>
+    <style>
+    #mynetwork{
+        width:600px;
+        height: 600px;
+        border: 2px solid black;
+
+    }
+    </style>
+    </head>
+    <body>
+    <div id="mynetwork"></div>
+    <script type="text/javascript">
+        var nodes= new vis.DataSet([
+            {id: 1,label: "Node 1",shape: "image",image: "https://upload.wikimedia.org/wikipedia/commons/4/41/Sistema_hipertextual.jpg",shapeProperties: {useImageSize:false,size: 50 },},
+            {id:2, label:'Node2',shape:"image",image:"https://media.istockphoto.com/id/1449798959/photo/beautiful-dianthus-perennial-pinks-in-bright-sun.jpg?s=2048x2048&w=is&k=20&c=W790IJHyW1s-4BhDH1oK_bmT-RaC3QJ0_B2a3AoDDt0=",shapeProperties:{useImageSize:false,size:50},},
+            {id:3,label:'Node3',shape:"diamond",color:'rgb(242, 246, 135)',size:40},
+            {id:4,label:'Node4',shape:'icon',icon:{face:"Fontawesome", code: "\u03a8",size:40}, color:'blue'},
+            {id:5,label:'Node5',shape:'star',color:'rgb(49,200,200)',size:40},
+            {id:6,label:'Node6',shape:'icon',icon:{ face: "FontAwesome", code: "\u03b4", size: 50 },color:'blue'},
+            {id:7,label:'Node7',shape:'triangleDown',color:'rgb(167, 248, 100)',size:40},
+            {id:8,label:'Node8',shape:'hexagon',color:'violet',shapeProperties: { borderDashes: true},size:40},
+            {id:9,label:'Node9',shape:"image",image:"https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg",shapeProperties:{useImageSize:false,size:50},},
+            {id:10,label:'Node 10',shape:'icon',icon:{face:'fontAwesome',code:'\u03a9',size:40},color:'blue'}
+
+    ]);
+    var edges=new vis.DataSet([
+            {from: 1, to: 2,color:{color:"black"},dashes:false},
+            {from:1, to: 3},
+            {from:2, to:4},
+            {from:2, to:5,color:{color:"blue"},dashes:false},
+            {from:2, to:6},
+            {from:6, to:7,color:{color:"red",opacity:'0.10'},},
+            {from:6, to:8,color:{color:'black',opacity:0.2},},
+            {from:3,to:9 ,color:'black'},
+            {from:9, to:10}
+       
+    ]);
+    var container=document.getElementById("mynetwork");
+    var data={
+        nodes:nodes,
+        edges:edges,
+    };
+    var options = {
+      nodes:{
+    borderWidth: 4,
+    borderWidthSelected:10,
+    color: 'black',
+    fixed: true,
+    font: '25px black',
+    scaling: {
+      label: true
+    },
+ group:undefined,
+heightConstraint:false,
+hidden:false
+      },
+  layout:{
+  improvedLayout :true,
+  hierarchical: {
+  enabled:true,
+  
+  /**direction :'UD',
+  
+  sortMethod:'hubsize',
+  
+  shakeTowards:'leaves',
+  parentCentralization  :true,**/
+  nodeSpacing : 250,
+  /**levelSeparation : 150,**/
+}
+},
+edges:{
+    /**arrows: {
+      to: {
+        enabled: false,
+        scaleFactor: 1,
+        src: "undefined",
+        type: "arrow"
+      },
+      middle: {
+        enabled: false,
+        scaleFactor: 1,
+        src: "undefined",
+        type: "arrow"
+      },
+      from: {
+        enabled: false,
+        scaleFactor: 10,
+        src:"undefined" ,
+        type: "arrow"
+      }
+    },**/
+    arrowStrikethrough: true,
+    chosen: true,
+    /**color: {
+      color:'#848484',
+      highlight:'#848484',
+      hover: '#848484',
+      inherit: 'from',
+      opacity:1.0
+},**/
+dashes:true,
+    }
+}
+var network = new vis.Network(container, data, options);
+
+
+
+
+
+
+
+
+    </script>
+    </body>
+</html>

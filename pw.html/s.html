@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>network</title>
+    <script
+        src="https:unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    
+    <style>
+        .mynetwork{
+            width: 1000px;
+            height: 700px;
+            border:5px solid rgb(17,5,5)
+        }
+    </style>
+</head>
+<body>
+    <div class="mynetwork"></div>
+    <script>
+        var nodes=new vis.DataSet([
+            {id:1,label:"Node 1",shape:"image",image:"alpha.png",shapeProperties:{useImageSize:false,size:50},},
+            {id:2,label:"Node 2",label:"Node \n2",shape:"image",image:"nature.jpg",shapeProperties:{useImageSize:false,size:50},borderDashes:true,color:"blue"},
+            {id:3,label:"Node 3",label:"Node\n3",shape:'diamond',color:'#D9EDF6',size:40},
+            {id:4,label:"Node 4",label:"Node\n4",shape:"icon",icon:{face:"FontAwesome",code:'#fDffB6',size:40},color:'#E4E1EE' },
+            {id:5,label:"Node 5",label:"Node\n5",shape:"star",icon:{face:"FontAwesome",code:'#u03a9',size:40},color:'#E4E1EE' },
+            {id:6,label:"Node 6",label:"Node\n6",shape:"icon",icon:{face:"FontAwesome",code:'#fDffB6',size:40},color:'#E4E1EE' },
+            {id:7,label:"Node 7",label:"Node\n7",shape:"triangleDown",icon:{face:"FontAwesome",code:'#fDffB6',size:40},color:'#E4E1EE' },
+            {id:8,label:"Node 8",label:"Node\n8",shape:"hexagon",icon:{face:"FontAwesome",code:'#fDffB6',size:40},color:'#E4E1EE' },
+            {id:9,label:"Node 9",label:"Node\n9",shape:"image",image:"cat.jpg",shapeProperties:{useImageSize:false,size:50},borderDashes:true,color:'#CBAACB'},
+ 
+ 
+ 
+ 
+ 
+        ])
+        var edges=new vis.DataSet([
+            {from: 1, to: 2,color:{color:"black"},borderDashes:true},
+            {from:1, to: 3},
+            {from:2, to:4},
+            {from:2, to:5,color:{color:"black"},borderDashes:false},
+            {from:2, to:6},
+            {from:6, to:7,color:{color:"red"},opacity:0.5},
+            {from:6, to:8},
+            {from:3,to:9 },
+            {from:9, to:10}
+        ])
+        var container=document.getElementById("mynetwork")
+        var data={
+            nodes:nodes,
+            edges:edges
+        }
+        var options={
+            nodes:{
+                borderwidth:4,
+                color:"aqua",
+                fixed:true,
+                font:'20px black',
+                scaling:{
+                    label:true
+                },
+                group:undefined,
+                heightConstraint:false,
+                hidden:false
+            },
+            layout:{
+                improvedLayout:true,
+                
+
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

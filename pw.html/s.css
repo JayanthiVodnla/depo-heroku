@@ -1,0 +1,30 @@
+.tree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.node{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.node > span{
+    padding: 8px 16px;
+    border:1px solid #333;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+}
+.node>.left-child>span,
+.node>.right-child>span{
+    padding: 6px 12px;
+    text-align: center;
+    border-radius: 50%;
+}
+.node> .left-child{
+    left: -80px;
+}

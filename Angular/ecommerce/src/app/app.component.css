@@ -1,0 +1,27 @@
+.div{
+    display: flex;
+    background-color: aqua;
+    
+}
+select{
+    margin-left: 50px;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    
+}
+.home{
+    margin-left: 190px;
+    padding: 20px;
+}
+a{
+    margin-left: 50px;
+    text-decoration: none;
+}
+select:hover{
+    color: red;
+}
+i{
+    margin-left: 90px;
+
+}

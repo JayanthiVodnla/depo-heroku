@@ -1,0 +1,39 @@
+h1{
+    background-color: antiquewhite;
+    text-align: center;
+    height: 50px;
+    width: 700px;
+    margin-left: 25%;
+}
+div{
+    text-align: center;
+    background-color: cadetblue;
+    height: 90px;
+    width: 700px;
+    margin-left: 25%;
+
+}
+#login{
+    background-color: bisque;
+    width: 700px;
+    text-align: center;
+    font-size: larger;
+    margin-left: 25%;
+
+}
+input{
+    border-radius: 16px;
+    width:20%;
+    margin-bottom: 10px;
+    
+}
+button{
+    width: 20%;
+    border-radius: 16px;
+}
+button:hover{
+    background-color: burlywood;
+}
+.login{
+    font-size: x-large;
+}

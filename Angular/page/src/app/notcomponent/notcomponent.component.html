@@ -1,0 +1,19 @@
+
+<html>
+    <body>
+  <form>
+    <!--img src="https://www.parallelwireless.com/wp-content/uploads/parallel_wireless.svg"-->
+    <input type="username" class="input" required placeholder="Username" [(ngModel)]="user" name="user"><br>
+    <input type="password" class="class" required placeholder="Password" [(ngModel)]="pass" name="pass"><br>
+    
+  <button (click)="login()"><a routerLink="angular">Login</a></button>
+  <!--button type="submit" [disabled]="!loginForm.valid">Login</button-->
+
+  
+  
+
+<router-outlet></router-outlet>
+  </form>
+
+  </body>
+  </html>

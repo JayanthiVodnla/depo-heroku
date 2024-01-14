@@ -1,0 +1,16 @@
+<html>
+  
+    <h4>LOGIN PAGE </h4>
+  <label for="username"></label>
+  <input type="username" [(ngModel)]="username" id="username"><br>
+  <label for="password"></label>
+  <input type="password" [(ngModel)]="password"  id="password"><br>
+  <button click="displayCredentials()">showCredentials</button>
+  <div *ngIf="showCredentials">
+    <p>username:{{username}}</p>
+    <p>password:{{password}}</p>
+  </div>
+  
+
+
+</html>

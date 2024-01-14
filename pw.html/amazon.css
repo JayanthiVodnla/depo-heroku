@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    font-family: Arial;
+    border:border-box;
+}
+.navbar{
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    height: 50px;
+    width:100px
+}
+.logo{
+    background-image: url("amazon.png");
+    background-size: cover;
+    height: 50px;
+    width:100%
+}
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+    border: 2px solid orange;
+}
+.add-first{
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+
+}
+.f{
+    border:2px 
+}
+.f:hover{
+    border: 2px solid salmon;
+}
+.add-sec{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex;
+align-items: center;
+}
+.nav-search{
+    margin-right: 50px;
+    display: flex;
+    background-color: aqua;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 30px;
+}
+.search-select{
+    height: 30px;
+    width:50px;
+}
+.search-input{
+    width: 25rem;
+}
+.search-icon{
+    width:50px;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    font-size: 0.7rem;
+}
+.list{
+    font-size: 0.80rem;
+    font-weight: 700;
+}
+span{
+    font-size: 1rem;
+}
+.orders{
+    font-size: 0.90rem;
+    font-weight: 800;
+
+}
+.cart i{
+    font-size: 35px;
+
+}
+.cart{
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+}
+.navbar2{
+    background-color:rgb(52,2,2);
+    display:flex;
+    align-items: center;
+    height: 40px;
+    color: white;
+color: rgb(242, 246, 135);
+border-radius: 2px black
+;
+}
+
+.panel{
+    margin-right: 70px;
+}
+.option{
+    display: flex;
+}
+.option p{
+    margin-left: 50px;
+}
+.box-section{
+    background-image:url("amazonpage.jpg");
+    height: 400px;
+    background-size: cover;
+    
+}
+.box{
+    background-image: url("watch.jpg");
+    height: 100px;
+}
+
